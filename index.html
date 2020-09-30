@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ang Lumilipad Kong Kubo</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- These 3 scripts are rewuired for the model viewer. -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- This controls the size and shape of the model viewer window. Usually housed in CSS, added here for clarity.-->
+    <style>
+      model-viewer {
+        margin: auto;
+        width: 80%;
+        height: 500px;
+      }
+      p {
+        color: black;
+        text-align: center;
+      }
+      h1 {
+        font-style: bold;
+        color: black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <center><img src="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2Ftitle.png?v=1601461243408" width="500" height="500"></src></center>
+    
+
+    <!-- This is the model veiwer element, inside of which I place the path to the model and the command to auto rotate.-->
+  
+    <model-viewer
+      camera-controls
+      skybox-image="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2Fgrass1.png?v=1601458840706"
+      alt="Umaga"
+      src="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2Fdayscene.gltf?v=1601458962063"
+      auto-rotate
+    >
+    </model-viewer>
+  
+    <center><p> 
+      <img src="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2Fmorning.png?v=1601462054554" width="300" height="150"></src>
+  </p></center>
+<center><p> 
+      <img src="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2FDay%20time2.png?v=1601461533311" width="1000" height="500"></src>
+  </p></center>
+
+    <model-viewer
+      camera-controls
+      skybox-image="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2Fgrass2.png?v=1601458867278"
+      alt="Gabi"
+      src="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2Fnightscene.gltf?v=1601458970622"
+      auto-rotate
+    >
+    </model-viewer>
+ 
+ <center><p> 
+      <img src="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2Fevening.png?v=1601462052189" width="300" height="150"></src>
+  </p></center>
+<center><p> 
+      <img src="https://cdn.glitch.com/1760e371-152e-4006-a27a-093e43aa8c6a%2FNight%20Time2.png?v=1601461530314" width="1000" height="500"></src>
+  </p></center>
+
+
+
+     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  </body>
+</html>
